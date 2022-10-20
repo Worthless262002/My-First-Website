@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(43, 47, 57);
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: blue;
+    border-radius: 10px;
+  }
+  .container li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    color:  rgb(43, 47, 57);
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  img {
+      height: 500px;
+      width: 450px;
+      margin-right: 20px;
+      margin-left: 80px;
+      border-radius: 5%;
+      border: rgb(33, 89, 243) solid 2px;
+  }
+  ion-icon {
+      color: #f5f8f7;
+      margin: 0 2px;
+      height: 40px;
+      width: 25px;
+      transition: 0.2s;
+  } 
+  ion-icon:hover{
+      transform: scale(1.5);
+  }
+  .social{
+      background-color: blue;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+  }
+  .social p{
+    font-size: larger;
+    color: whitesmoke;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 5px;
+  }
+  .social small{
+    margin-left: 740px;
+    margin-top: 10px;
+  }
+  .social a {
+      margin-left: 5px;
+  }
+  label.logo {
+      display: inline-block;
+      color: white;
+      font-size: 35px;
+      line-height: 80px;
+      padding: 0 100px;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  .aboutme {
+    display: flex;
+    align-items: center ;
+  }
+  .text-col{
+    border: #04AA6D solid 2px;
+    margin-right: 50px;
+    border-radius: 10px;
+  }
+  .text-col p {
+    font-size: x-large;
+    color: rgb(233, 227, 227);
+  }
+  .text-col h2 {
+    font-size: xx-large;
+    color: #04AA6D;
+  }
+     form {
+     width: 50%;
+     border: 2px solid black;
+     background-color: #C0C0C0;
+     padding-left: 60px;
+     border-radius: 10px;
+     padding-bottom: 30px;
+     margin-left: 25%;
+ }
+ legend {
+     background-color:#14fff3;
+     text-align: left;
+     width: 30%;
+     border-radius: 7px;
+     height: auto;
+     font-size: 26px;
+     font-family: lato;
+     font-weight: 300;
+ }
+  
+ button {
+            float: left;
+            width: 15%;
+            max-width: 100%;
+            margin: 0 auto;
+            margin-bottom: 0;
+            overflow: hidden;
+            transform: translatez(0);
+            text-decoration: none;
+            font-size: large;
+            font-weight: normal;
+            box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
+            height: 44px;
+            background-color: blue;
+            border-radius: 7px;
+            margin-left: 25%;
+        }
+        
+        button:hover {
+            
+            font-weight: bold;
+            background-color:#14fff3;
+        }
+        .number5 {
+            font-size: 20px;
+            width: 70%;
+            border-radius: 7px;
+            height: 120px;
+            display: inline-block;
+        }
+        .bar {
+            background-color: rgb(54, 211, 232);
+            color:  rgb(54, 211, 232);
+            padding-right: 10%;
+            padding-left: 100px;
+            border-radius: 15px;
+        }
+        
+        .prog {
+            width: 85%;
+            height: 40px;
+        }
+        .container0 {
+            background-color: whitesmoke;
+            width: 5%;
+            padding-right: 20%;
+            margin-left: 41%;
+            margin-top: 1.2%;
+            border-radius: 15px;
+        }
+    </style> 
+    <title>Quiz App</title>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <nav>
+        <ul>
+            <label class="logo">Vic.Panti</label>
+            <li><a href="quizapp.html">Quis App</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="stats.html" >Stats</a></li>
+            <li><a href="index.html">Home</a> </li>
+        </ul>
+      </div>
+      <br>
+    <div class="studentinformation">
+        <form class="box1">
+            <legend>Student Info</legend> <br> 
+                <label for="Name">Name: &nbsp;&nbsp;&nbsp;</label>
+                <input class="nm" id="name" placeholder="e.g Victor M Panti III">
+                <br>
+                <label for="Email">Email: &nbsp;&nbsp;&nbsp;</label>
+                <input class="email" id="email" placeholder="e.g victorpanti05262002@gmail.com">
+                <br>
+                <label for="Course">Course:&nbsp;&nbsp;</label>
+                <input class="crs" id="crs" placeholder="Please input courser and block">
+                <br>
+                <label8 for="date">Birthday:</label8>
+                <input style=" width: 30%;
+                border-radius: 7px;
+                height: 10%;
+                padding-top: 5px;
+                font-size: 15px;
+                padding-bottom: 5px;" type="date" id="date">
+        </form>
+        </div>
+        <div class="Exam-Proper">
+        <br>
+        <form class="box2">
+           <legend>Exam Proper</legend>
+           <br>
+                <ol>
+                    <li> What is the CSS Stand for?</li>
+                    <input class="number1">
+
+                    <li>How many ways are there to insert CSS to an HTML document?</li>
+                    <input type="radio" id="one" name="one" value="one">
+                    <label for="one">one</label><br>
+                    <input type="radio" id="two" name="two" value="two">
+                    <label for="two">two</label><br>
+                    <input type="radio" id="three" name="three" value="three">
+                    <label for="three">three</label>
+
+
+                    <li>Select all legitimate CSS properties</li>
+                    <input type="checkbox" name="Font" value="Font">
+                    <label>Font</label><br>
+                    <input type="checkbox" name="Label" value="Label">
+                    <label>Label</label><br>
+                    <input type="checkbox" name="Background" value="Background">
+                    <label>Background</label><br>
+                    <input type="checkbox" name="Table" value="Table">
+                    <label>Table</label><br>
+                    <input type="checkbox" name="Forms" value="Forms">
+                    <label15>Forms</label15></label><br>
+                
+
+                    <li> Upload a simple navigation markup</li>
+                    <label for="mfile "></label>
+                    <input type="file" id="file " name="file ">
+
+                     <li>Discuss the importance of CSS in HTML and what is the <br> importance of it in designing your web pages.</li>
+                     <textarea class="number5"></textarea>
+                     </ol>
+            </form>
+        </div>
+        <br>
+        <div>
+            <button style="margin-top:14px; " class="submit"> Submit</button>
+        </div>
+
+        <div class="container0">
+            <div class="bar prog"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="social"> 
+            <p>Follow me on social Media!</p> <br>
+            <a href="https://www.facebook.com/profile.php?id=100041043602542" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.instagram.com/worthless_262002/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/victor-m-panti-iii-319a61253/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://twitter.com/panti_victor" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+           <p style="text-align: right;"> <small>Copyright VMP @ 2022 </small></p>
+</div>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
